@@ -11,5 +11,7 @@ class Produto(SQLModel, table=True):
     preco: float
     estoque: int
     # pedidos: list["Pedido"] = Relationship(back_populates="produtos", link_model=[CLASSE ASSOCIATIVA])
+    loja_id: int = Relationship(foreign_key="loja.id")
+    loja: Loja = Relationship(back_populates="produto")
     # usuario_id: int = Relationship(foreign_key="usuario.id")
-    # produtos: Usuario = Relationship(back_populates="usuario")
+    # usario: Usuario = Relationship(back_populates="produto")

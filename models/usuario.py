@@ -12,4 +12,4 @@ class Usuario(SQLModel, table=True):
     telefone: str
     endereco: Endereco = Relationship(back_populates="usuarios")
     pedidos: list["Pedido"] = Relationship(back_populates="usuarios")
-    # produtos: list["Produto"] = Relationship(back_populates="usuarios")
+    # produtos: list["Produto"] = Relationship(back_populates="usuario")

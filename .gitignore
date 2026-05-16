@@ -1,0 +1,19 @@
+# Banco de dados local SQLite
+*.db
+*.sqlite3
+
+# Arquivo de variáveis de ambiente
+.env
+
+# Pastas de ambiente virtual Python (criadas pelo uv ou venv)
+.venv/
+venv/
+env/
+
+# Cache do Python e artefatos de compilação
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Arquivos físicos de upload (pasta onde os PDFs/Imagens do Document vão ficar)
+uploads/
